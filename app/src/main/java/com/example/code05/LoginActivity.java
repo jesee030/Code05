@@ -1,18 +1,20 @@
 package com.example.code05;
 
-import android.app.Activity;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private Boolean bPwdSwitch = false;
     private EditText etPwd;
+    private EditText etAccount;
+    private CheckBox cbRememberPwd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
