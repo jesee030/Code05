@@ -44,7 +44,8 @@
             android:layout_marginBottom="4dp"
             android:hint="Email/Account"
             android:inputType="text"
-            android:maxLines="1" />
+            android:maxLines="1"
+            android:id="@+id/et_account"/>
 
     </RelativeLayout>
 
@@ -92,7 +93,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/purple_500"
-            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
             android:text="Remember Password"
             android:layout_marginBottom="4dp"
             android:layout_alignParentStart="true"
@@ -118,6 +119,7 @@
         android:layout_weight="1">
 
         <Button
+            android:id="@+id/bt_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
